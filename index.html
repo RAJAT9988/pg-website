@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MR PGs - Comfortable Living Spaces</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .hero {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .room-image {
+            transition: transform 0.3s ease;
+        }
+        
+        .room-image:hover {
+            transform: scale(1.03);
+        }
+        
+        .amenity-icon {
+            font-size: 2rem;
+            color: #3b82f6;
+        }
+        
+        .contact-card {
+            transition: all 0.3s ease;
+        }
+        
+        .contact-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .map-container {
+            height: 400px;
+            border-radius: 0.5rem;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-4">
+                    <div>
+                        <span class="text-blue-600 font-bold text-2xl">MR</span>
+                        <span class="text-gray-800 font-bold text-2xl">PGs</span>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-blue-600 font-medium">Home</a>
+                    <a href="#pgs" class="text-gray-800 hover:text-blue-600 transition">Our PGs</a>
+                    <a href="#amenities" class="text-gray-800 hover:text-blue-600 transition">Amenities</a>
+                    <a href="#gallery" class="text-gray-800 hover:text-blue-600 transition">Gallery</a>
+                    <a href="#contact" class="text-gray-800 hover:text-blue-600 transition">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="mobile-menu-button p-2 focus:outline-none">
+                        <svg class="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div class="mobile-menu hidden md:hidden bg-white py-4 px-4">
+            <a href="#home" class="block py-2 text-gray-800 hover:text-blue-600">Home</a>
+            <a href="#pgs" class="block py-2 text-gray-800 hover:text-blue-600">Our PGs</a>
+            <a href="#amenities" class="block py-2 text-gray-800 hover:text-blue-600">Amenities</a>
+            <a href="#gallery" class="block py-2 text-gray-800 hover:text-blue-600">Gallery</a>
+            <a href="#contact" class="block py-2 text-gray-800 hover:text-blue-600">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero py-32 text-white">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">Comfortable & Affordable PG Accommodation</h1>
+            <p class="text-xl md:text-2xl mb-8">Find your perfect home away from home in Gandhinagar</p>
+            <a href="#pgs" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full transition duration-300 inline-block">
+                Explore Our PGs
+            </a>
+        </div>
+    </section>
+
+    <!-- Our PGs Section -->
+    <section id="pgs" class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Our Paying Guest Facilities</h2>
+            
+            <!-- Boys PG - Sector 4/A -->
+            <div class="mb-20 bg-gray-50 rounded-xl overflow-hidden shadow-lg">
+                <div class="md:flex">
+                    <div class="md:w-1/2">
+                        <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                             alt="Boys PG Sector 4/A" class="w-full h-full object-cover">
+                    </div>
+                    <div class="md:w-1/2 p-8">
+                        <h3 class="text-2xl font-bold text-blue-600 mb-4">Boys PG - Sector 4/A</h3>
+                        <p class="text-gray-700 mb-4">Our premium boys' PG accommodation located in the heart of Gandhinagar. Perfect for students and working professionals.</p>
+                        
+                        <div class="mb-6">
+                            <h4 class="font-semibold text-gray-800 mb-2">Features:</h4>
+                            <ul class="list-disc pl-5 text-gray-700">
+                                <li>Spacious single and shared rooms</li>
+                                <li>24/7 security and CCTV surveillance</li>
+                                <li>High-speed WiFi</li>
+                                <li>Healthy and hygienic meals</li>
+                                <li>Laundry service available</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-map-marker-alt text-blue-600 mr-2"></i>
+                            <span class="text-gray-700">Sector 4/A, Near Infocity, Gandhinagar</span>
+                        </div>
+                        
+                        <div class="flex items-center">
+                            <i class="fas fa-phone text-blue-600 mr-2"></i>
+                            <span class="text-gray-700">+91 80000 77001</span>
+                        </div>
+                        
+                        <div class="mt-6">
+                            <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-6 rounded-full transition duration-300 inline-block">
+                                Contact Owner
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Girls PG - Sector 4/A -->
+            <div class="mb-20 bg-gray-50 rounded-xl overflow-hidden shadow-lg">
+                <div class="md:flex flex-row-reverse">
+                    <div class="md:w-1/2">
+                        <img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                             alt="Girls PG Sector 4/A" class="w-full h-full object-cover">
+                    </div>
+                    <div class="md:w-1/2 p-8">
+                        <h3 class="text-2xl font-bold text-pink-600 mb-4">Girls PG - Sector 4/A</h3>
+                        <p class="text-gray-700 mb-4">A safe and comfortable living space exclusively for female students and working professionals in Gandhinagar.</p>
+                        
+                        <div class="mb-6">
+                            <h4 class="font-semibold text-gray-800 mb-2">Features:</h4>
+                            <ul class="list-disc pl-5 text-gray-700">
+                                <li>Secure and well-maintained premises</li>
+                                <li>24/7 female warden available</li>
+                                <li>Nutritious vegetarian meals</li>
+                                <li>Study room and common area</li>
+                                <li>Regular cleaning and maintenance</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-map-marker-alt text-pink-600 mr-2"></i>
+                            <span class="text-gray-700">Sector 4/A, Near Infocity, Gandhinagar</span>
+                        </div>
+                        
+                        <div class="flex items-center">
+                            <i class="fas fa-phone text-pink-600 mr-2"></i>
+                            <span class="text-gray-700">+91 80000 77001</span>
+                        </div>
+                        
+                        <div class="mt-6">
+                            <a href="#contact" class="bg-pink-600 hover:bg-pink-700 text-white font-medium py-2 px-6 rounded-full transition duration-300 inline-block">
+                                Contact Owner
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Boys PG - Sector 5/B -->
+            <div class="bg-gray-50 rounded-xl overflow-hidden shadow-lg">
+                <div class="md:flex">
+                    <div class="md:w-1/2">
+                        <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1558&q=80" 
+                             alt="Boys PG Sector 5/B" class="w-full h-full object-cover">
+                    </div>
+                    <div class="md:w-1/2 p-8">
+                        <h3 class="text-2xl font-bold text-blue-600 mb-4">Boys PG - Sector 5/B</h3>
+                        <p class="text-gray-700 mb-4">Budget-friendly accommodation for boys with all essential amenities, located in a peaceful neighborhood.</p>
+                        
+                        <div class="mb-6">
+                            <h4 class="font-semibold text-gray-800 mb-2">Features:</h4>
+                            <ul class="list-disc pl-5 text-gray-700">
+                                <li>Affordable pricing options</li>
+                                <li>Close to public transport</li>
+                                <li>24/7 water and electricity</li>
+                                <li>Common TV lounge</li>
+                                <li>Monthly cleaning service</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-map-marker-alt text-blue-600 mr-2"></i>
+                            <span class="text-gray-700">Sector 5/B, Near Mahakali Mata Temple, Gandhinagar</span>
+                        </div>
+                        
+                        <div class="flex items-center">
+                            <i class="fas fa-phone text-blue-600 mr-2"></i>
+                            <span class="text-gray-700">+91 80000 77001</span>
+                        </div>
+                        
+                        <div class="mt-6">
+                            <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-6 rounded-full transition duration-300 inline-block">
+                                Contact Owner
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Amenities Section -->
+    <section id="amenities" class="py-16 bg-gray-100">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Our Amenities</h2>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="amenity-icon mb-4">
+                        <i class="fas fa-wifi"></i>
+                    </div>
+                    <h3 class="font-semibold text-gray-800 mb-2">High-Speed WiFi</h3>
+                    <p class="text-gray-600">Uninterrupted internet access for study and work</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="amenity-icon mb-4">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3 class="font-semibold text-gray-800 mb-2">Hygienic Food</h3>
+                    <p class="text-gray-600">Delicious and nutritious meals served daily</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="amenity-icon mb-4">
+                        <i class="fas fa-fan"></i>
+                    </div>
+                    <h3 class="font-semibold text-gray-800 mb-2">AC Rooms</h3>
+                    <p class="text-gray-600">Cool and comfortable living spaces</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="amenity-icon mb-4">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="font-semibold text-gray-800 mb-2">24/7 Security</h3>
+                    <p class="text-gray-600">Safe and secure environment</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="amenity-icon mb-4">
+                        <i class="fas fa-tv"></i>
+                    </div>
+                    <h3 class="font-semibold text-gray-800 mb-2">TV Lounge</h3>
+                    <p class="text-gray-600">Common area for relaxation</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="amenity-icon mb-4">
+                        <i class="fas fa-water"></i>
+                    </div>
+                    <h3 class="font-semibold text-gray-800 mb-2">24/7 Water</h3>
+                    <p class="text-gray-600">Round the clock water supply</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="amenity-icon mb-4">
+                        <i class="fas fa-broom"></i>
+                    </div>
+                    <h3 class="font-semibold text-gray-800 mb-2">Housekeeping</h3>
+                    <p class="text-gray-600">Regular cleaning and maintenance</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="amenity-icon mb-4">
+                        <i class="fas fa-parking"></i>
+                    </div>
+                    <h3 class="font-semibold text-gray-800 mb-2">Bike Parking</h3>
+                    <p class="text-gray-600">Secure parking space</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Gallery</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="overflow-hidden rounded-lg shadow-md">
+                    <img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                         alt="PG Room" class="w-full h-64 object-cover room-image">
+                    <div class="p-4">
+                        <h3 class="font-semibold text-gray-800">Girls PG Room</h3>
+                    </div>
+                </div>
+                
+                <div class="overflow-hidden rounded-lg shadow-md">
+                    <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                         alt="PG Room" class="w-full h-64 object-cover room-image">
+                    <div class="p-4">
+                        <h3 class="font-semibold text-gray-800">Boys PG Room</h3>
+                    </div>
+                </div>
+                
+                <div class="overflow-hidden rounded-lg shadow-md">
+                    <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1558&q=80" 
+                         alt="PG Room" class="w-full h-64 object-cover room-image">
+                    <div class="p-4">
+                        <h3 class="font-semibold text-gray-800">Shared Room</h3>
+                    </div>
+                </div>
+                
+                <div class="overflow-hidden rounded-lg shadow-md">
+                    <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                         alt="Dining Area" class="w-full h-64 object-cover room-image">
+                    <div class="p-4">
+                        <h3 class="font-semibold text-gray-800">Dining Area</h3>
+                    </div>
+                </div>
+                
+                <div class="overflow-hidden rounded-lg shadow-md">
+                    <img src="https://images.unsplash.com/photo-1565538810643-b5bdb714032a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                         alt="Common Area" class="w-full h-64 object-cover room-image">
+                    <div class="p-4">
+                        <h3 class="font-semibold text-gray-800">Common Area</h3>
+                    </div>
+                </div>
+                
+                <div class="overflow-hidden rounded-lg shadow-md">
+                    <img src="https://images.unsplash.com/photo-1600566752226-5fabb6f2bc6f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                         alt="Study Room" class="w-full h-64 object-cover room-image">
+                    <div class="p-4">
+                        <h3 class="font-semibold text-gray-800">Study Room</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-100">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Contact Us</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                <!-- Boys PG - Sector 4/A Contact -->
+                <div class="bg-white p-6 rounded-xl shadow-md contact-card">
+                    <h3 class="text-xl font-bold text-blue-600 mb-4">Boys PG - Sector 4/A</h3>
+                    <div class="flex items-start mb-4">
+                        <i class="fas fa-user text-blue-600 mt-1 mr-3"></i>
+                        <div>
+                            <p class="font-medium text-gray-800">Owner: Mr. Rachit Patel</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start mb-4">
+                        <i class="fas fa-phone text-blue-600 mt-1 mr-3"></i>
+                        <div>
+                            <p class="text-gray-700">+91 80000 77001</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <i class="fas fa-envelope text-blue-600 mt-1 mr-3"></i>
+                        <div>
+                            <p class="text-gray-700">rachit4003@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Girls PG - Sector 4/A Contact -->
+                <div class="bg-white p-6 rounded-xl shadow-md contact-card">
+                    <h3 class="text-xl font-bold text-pink-600 mb-4">Girls PG - Sector 4/A</h3>
+                    <div class="flex items-start mb-4">
+                        <i class="fas fa-user text-pink-600 mt-1 mr-3"></i>
+                        <div>
+                            <p class="font-medium text-gray-800">Owner: Mrs. Disha Rachit Patel</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start mb-4">
+                        <i class="fas fa-phone text-pink-600 mt-1 mr-3"></i>
+                        <div>
+                            <p class="text-gray-700">+91 80000 77500</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <i class="fas fa-envelope text-pink-600 mt-1 mr-3"></i>
+                        <div>
+                            <p class="text-gray-700">rachit4003@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Boys PG - Sector 5/B Contact -->
+                <div class="bg-white p-6 rounded-xl shadow-md contact-card">
+                    <h3 class="text-xl font-bold text-blue-600 mb-4">Boys PG - Sector 5/B</h3>
+                    <div class="flex items-start mb-4">
+                        <i class="fas fa-user text-blue-600 mt-1 mr-3"></i>
+                        <div>
+                            <p class="font-medium text-gray-800">Owner: Mr. Rachit Patel</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start mb-4">
+                        <i class="fas fa-phone text-blue-600 mt-1 mr-3"></i>
+                        <div>
+                            <p class="text-gray-700">+91 80000 77001</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <i class="fas fa-envelope text-blue-600 mt-1 mr-3"></i>
+                        <div>
+                            <p class="text-gray-700">rachit4003@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Location Map -->
+            <div class="bg-white p-6 rounded-xl shadow-md">
+                <h3 class="text-xl font-bold text-gray-800 mb-4">Our Locations</h3>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h4 class="font-semibold text-blue-600 mb-2">Sector 4/A PGs</h4>
+                        <div class="map-container mb-4">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3666.365060756012!2d72.6368603153346!3d23.239126014827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395c2b933477ba9f%3A0xe440409e66b96a1!2sGandhinagar%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1629999999999!5m2!1sen!2sin" 
+                                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                        <p class="text-gray-700">Address: Sector 4/A, Near Infocity , Gandhinagar, Gujarat</p>
+                    </div>
+                    
+                    <div>
+                        <h4 class="font-semibold text-blue-600 mb-2">Sector 5/B PG</h4>
+                        <div class="map-container mb-4">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3666.365060756012!2d72.6368603153346!3d23.239126014827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395c2b933477ba9f%3A0xe440409e66b96a1!2sGandhinagar%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1629999999999!5m2!1sen!2sin" 
+                                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                        <p class="text-gray-700">Address: Sector 5/B, Near Mahakali Mata Temple, Gandhinagar, Gujarat</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Gandhinagar PGs</h3>
+                    <p class="mb-4">Providing comfortable and affordable accommodation for students and working professionals in Gandhinagar.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-white transition">Home</a></li>
+                        <li><a href="#pgs" class="text-gray-400 hover:text-white transition">Our PGs</a></li>
+                        <li><a href="#amenities" class="text-gray-400 hover:text-white transition">Amenities</a></li>
+                        <li><a href="#gallery" class="text-gray-400 hover:text-white transition">Gallery</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Info</h3>
+                    <div class="flex items-start mb-3">
+                        <i class="fas fa-map-marker-alt mt-1 mr-3"></i>
+                        <p class="text-gray-400">Sector 4/A & 5/B, Gandhinagar, Gujarat</p>
+                    </div>
+                    <div class="flex items-start mb-3">
+                        <i class="fas fa-phone mt-1 mr-3"></i>
+                        <p class="text-gray-400">+91 80000 77001</p>
+                    </div>
+                    <div class="flex items-start">
+                        <i class="fas fa-envelope mt-1 mr-3"></i>
+                        <p class="text-gray-400">rachit4003@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-6 text-center text-gray-400">
+                <p>&copy; 2024 Gandhinagar PGs. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="fixed bottom-6 right-6 bg-blue-600 text-white p-3 rounded-full shadow-lg opacity-0 invisible transition-all duration-300">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.querySelector('.mobile-menu-button');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Back to top button
+        const backToTopButton = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.remove('opacity-0', 'invisible');
+                backToTopButton.classList.add('opacity-100', 'visible');
+            } else {
+                backToTopButton.classList.remove('opacity-100', 'visible');
+                backToTopButton.classList.add('opacity-0', 'invisible');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
